@@ -83,7 +83,7 @@ export const EditBankCard = () =>{
     formData.append('country', country)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/bank-card/${details.id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/bank-card/${details.id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{

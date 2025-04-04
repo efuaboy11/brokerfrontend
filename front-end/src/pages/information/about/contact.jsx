@@ -68,7 +68,7 @@ export const Contact = () =>{
     formData.append('message', emailMessage)
 
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/contact-us/', {
+      const response = await fetch('https://api.amanilightequity.com/api/contact-us/', {
         method: 'POST',
         body: formData,
       })

@@ -78,7 +78,7 @@ export const WithdrawReviewDetails = () =>{
 
   const BankCardFunction = async() =>{   
 
-    let response = await fetch(`http://127.0.0.1:8000/api/bank-card/${sessionStorage.getItem('paymentMethodID')}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${sessionStorage.getItem('paymentMethodID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export const WithdrawReviewDetails = () =>{
   }
 
   const BankAccountFunction = async() =>{
-    let response = await fetch(`http://127.0.0.1:8000/api/bank-account/${sessionStorage.getItem('paymentMethodID')}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/bank-account/${sessionStorage.getItem('paymentMethodID')}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const WithdrawReviewDetails = () =>{
   }
 
   const WalletAddressFunction = async() =>{
-      let response = await fetch(`http://127.0.0.1:8000/api/wallet-address/${sessionStorage.getItem('paymentMethodID')}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${sessionStorage.getItem('paymentMethodID')}/`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -157,7 +157,7 @@ export const WithdrawReviewDetails = () =>{
 
 
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/withdraw/', {
+      const response = await fetch('https://api.amanilightequity.com/api/withdraw/', {
         method: 'POST',
         body: formData,
         headers:{

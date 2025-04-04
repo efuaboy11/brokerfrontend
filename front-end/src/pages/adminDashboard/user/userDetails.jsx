@@ -314,7 +314,7 @@ export const UserDetails = () =>{
 
 
   const IndividualUser = async(id) =>{
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${details.user}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${details.user}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -331,7 +331,7 @@ export const UserDetails = () =>{
 
   const IndividualDeposit = async() =>{
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/deposits/${selectedDataId}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/deposits/${selectedDataId}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -355,7 +355,7 @@ export const UserDetails = () =>{
 
   const IndividualWithdraw = async() =>{
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/withdraw/${selectedDataId}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/withdraw/${selectedDataId}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -381,7 +381,7 @@ export const UserDetails = () =>{
 
   const InvestmentIntrest = async(user, investment_id) =>{
 
-    let response = await fetch(`http://127.0.0.1:8000/api/investment-intrest/filter/?user=${user}&investment_id=${investment_id}`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/investment-intrest/filter/?user=${user}&investment_id=${investment_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -409,7 +409,7 @@ export const UserDetails = () =>{
   const IndividualInvestment = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/user-investment/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-investment/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -440,7 +440,7 @@ export const UserDetails = () =>{
     setSelectedDataId(null)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/deposits/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/deposits/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -485,7 +485,7 @@ export const UserDetails = () =>{
     setSelectedDataId(null)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/withdraw/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/withdraw/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`

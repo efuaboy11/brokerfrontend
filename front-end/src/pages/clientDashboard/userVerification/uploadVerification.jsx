@@ -120,7 +120,7 @@ export const ClientUploadUserVerification = () =>{
     formData.append('ssn', ssn)
 
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/user/verification/', {
+      const response = await fetch('https://api.amanilightequity.com/api/user/verification/', {
         method: 'POST',
         body: formData,
         headers:{

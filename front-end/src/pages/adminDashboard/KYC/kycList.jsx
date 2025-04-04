@@ -77,7 +77,7 @@ export const KYCList = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user/kyc-verification/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user/kyc-verification/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

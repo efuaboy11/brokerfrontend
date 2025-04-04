@@ -123,7 +123,7 @@ export const IndividualKYC = () =>{
     setDeletebtnLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/user/kyc-verification/${details.id}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/user/kyc-verification/${details.id}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -170,7 +170,7 @@ export const IndividualKYC = () =>{
     console.log('yes')
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/user/kyc-verification/${details.id}/update-status/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/user/kyc-verification/${details.id}/update-status/`, {
         method: 'PATCH',
         body: JSON.stringify({
           status: statusValue,

@@ -224,7 +224,7 @@ export const AllDataProvider =  ({ children }) =>{
 
  
   const DepositFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/deposits/', {
+    let response = await fetch('https://api.amanilightequity.com/api/deposits/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -261,7 +261,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(allDepositSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/deposits/?search=${allDepositSearch}`
+      url = `https://api.amanilightequity.com/api/deposits/?search=${allDepositSearch}`
     }
 
 
@@ -283,7 +283,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const SuccessfulDepositFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/deposits/successful/', {
+    let response = await fetch('https://api.amanilightequity.com/api/deposits/successful/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -322,7 +322,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(successfulDepositSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/deposits/successful/?search=${successfulDepositSearch}`
+      url = `https://api.amanilightequity.com/api/deposits/successful/?search=${successfulDepositSearch}`
     }
 
 
@@ -344,7 +344,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const DeclinedDepositFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/deposits/declined/', {
+    let response = await fetch('https://api.amanilightequity.com/api/deposits/declined/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -379,7 +379,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(declinedDepositSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/deposits/declined/?search=${declinedDepositSearch}`
+      url = `https://api.amanilightequity.com/api/deposits/declined/?search=${declinedDepositSearch}`
     }
 
 
@@ -401,7 +401,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const PendingDepositFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/deposits/pending/', {
+    let response = await fetch('https://api.amanilightequity.com/api/deposits/pending/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -433,7 +433,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(pendingDepositSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/deposits/pending/?search=${pendingDepositSearch}`
+      url = `https://api.amanilightequity.com/api/deposits/pending/?search=${pendingDepositSearch}`
     }
 
 
@@ -456,7 +456,7 @@ export const AllDataProvider =  ({ children }) =>{
   
 
   const WithdrawFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/withdraw/', {
+    let response = await fetch('https://api.amanilightequity.com/api/withdraw/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -491,7 +491,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(allWithdrawSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/withdraw/?search=${allWithdrawSearch}`
+      url = `https://api.amanilightequity.com/api/withdraw/?search=${allWithdrawSearch}`
     }
 
 
@@ -513,7 +513,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const SuccessfulWithdrawFunction = async() =>{ 
-    let response = await fetch('http://127.0.0.1:8000/api/withdraw/successful/', {
+    let response = await fetch('https://api.amanilightequity.com/api/withdraw/successful/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -551,7 +551,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(successfulWithdrawSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/withdraw/successful/?search=${successfulWithdrawSearch}`
+      url = `https://api.amanilightequity.com/api/withdraw/successful/?search=${successfulWithdrawSearch}`
     }
 
 
@@ -573,7 +573,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const PendingWithdrawFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/withdraw/pending/', {
+    let response = await fetch('https://api.amanilightequity.com/api/withdraw/pending/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -608,7 +608,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(pendingWithdrawSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/withdraw/pending/?search=${pendingWithdrawSearch}`
+      url = `https://api.amanilightequity.com/api/withdraw/pending/?search=${pendingWithdrawSearch}`
     }
 
 
@@ -632,7 +632,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const DeclinedWithdrawFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/withdraw/declined/', {
+    let response = await fetch('https://api.amanilightequity.com/api/withdraw/declined/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -667,7 +667,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(declinedWithdrawSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/withdraw/declined/?search=${declinedWithdrawSearch}`
+      url = `https://api.amanilightequity.com/api/withdraw/declined/?search=${declinedWithdrawSearch}`
     }
 
 
@@ -689,7 +689,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const InterestFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/investment-intrest/', {
+    let response = await fetch('https://api.amanilightequity.com/api/investment-intrest/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -720,7 +720,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const WalletAddressFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/wallet-address/', {
+    let response = await fetch('https://api.amanilightequity.com/api/wallet-address/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -750,7 +750,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(walletAddressSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/wallet-address/?search=${walletAddressSearch}`
+      url = `https://api.amanilightequity.com/api/wallet-address/?search=${walletAddressSearch}`
     }
 
 
@@ -772,7 +772,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const BankAccountFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/bank-account/', {
+    let response = await fetch('https://api.amanilightequity.com/api/bank-account/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -802,7 +802,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(bankAccountSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/bank-account/?search=${bankAccountSearch}`
+      url = `https://api.amanilightequity.com/api/bank-account/?search=${bankAccountSearch}`
     }
 
 
@@ -824,7 +824,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const BankCardFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/bank-card/', {
+    let response = await fetch('https://api.amanilightequity.com/api/bank-card/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -855,7 +855,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(bankCardSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/bank-card/?search=${bankCardSearch}`
+      url = `https://api.amanilightequity.com/api/bank-card/?search=${bankCardSearch}`
     }
 
 
@@ -883,7 +883,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(interestSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/investment-intrest/?search=${interestSearch}`
+      url = `https://api.amanilightequity.com/api/investment-intrest/?search=${interestSearch}`
     }
 
 
@@ -905,7 +905,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const InvestmentFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-investment/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-investment/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -933,7 +933,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(investmentSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/user-investment/?search=${investmentSearch}`
+      url = `https://api.amanilightequity.com/api/user-investment/?search=${investmentSearch}`
     }
 
 
@@ -955,7 +955,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const SuccessfulInvestmentFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-investment/successful/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-investment/successful/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -983,7 +983,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const ActiveInvestmentFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-investment/active/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-investment/active/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1014,7 +1014,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(activeInvestmentSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/user-investment/active/?search=${activeInvestmentSearch}`
+      url = `https://api.amanilightequity.com/api/user-investment/active/?search=${activeInvestmentSearch}`
     }
 
 
@@ -1036,7 +1036,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const PendingInvestmentFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-investment/pending/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-investment/pending/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1064,7 +1064,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(pendingInvestmentSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/user-investment/pending/?search=${pendingInvestmentSearch}`
+      url = `https://api.amanilightequity.com/api/user-investment/pending/?search=${pendingInvestmentSearch}`
     }
 
 
@@ -1087,7 +1087,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const CompletedInvestmentFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-investment/completed/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-investment/completed/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1117,7 +1117,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(completedInvestmentSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/user-investment/completed/?search=${completedInvestmentSearch}`
+      url = `https://api.amanilightequity.com/api/user-investment/completed/?search=${completedInvestmentSearch}`
     }
 
 
@@ -1140,7 +1140,7 @@ export const AllDataProvider =  ({ children }) =>{
 
     
   const DeclinedInvestmentFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-investment/declined/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-investment/declined/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1169,7 +1169,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(declinedInvestmentSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/user-investment/declined/?search=${declinedInvestmentSearch}`
+      url = `https://api.amanilightequity.com/api/user-investment/declined/?search=${declinedInvestmentSearch}`
     }
 
 
@@ -1192,7 +1192,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const UsersFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1223,7 +1223,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(userSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/?search=${userSearch}`
+      url = `https://api.amanilightequity.com/api/users/?search=${userSearch}`
     }
 
 
@@ -1244,7 +1244,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const DisableUsersFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/disable-account/', {
+    let response = await fetch('https://api.amanilightequity.com/api/disable-account/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1272,7 +1272,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(disableUserSeacrh.length !== 0){
-      url = `http://127.0.0.1:8000/api/disable-account/?search=${disableUserSeacrh}`
+      url = `https://api.amanilightequity.com/api/disable-account/?search=${disableUserSeacrh}`
     }
 
 
@@ -1294,7 +1294,7 @@ export const AllDataProvider =  ({ children }) =>{
   
 
   const UserVerificationFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user/verification/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user/verification/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1319,7 +1319,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(userVerificationSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/user/verification/?search=${userVerificationSearch}`
+      url = `https://api.amanilightequity.com/api/user/verification/?search=${userVerificationSearch}`
     }
 
 
@@ -1340,7 +1340,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const PendingUserVerficationFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/verification/pending/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/verification/pending/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1367,7 +1367,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(pendingUserVerificationSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/verification/pending/?search=${pendingUserVerificationSearch}`
+      url = `https://api.amanilightequity.com/api/users/verification/pending/?search=${pendingUserVerificationSearch}`
     }
 
 
@@ -1389,7 +1389,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const CanceledUserVerificationFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/verification/canceled/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/verification/canceled/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1414,7 +1414,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(canceledUserVerificationsearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/verification/canceled/?search=${canceledUserVerificationsearch}`
+      url = `https://api.amanilightequity.com/api/users/verification/canceled/?search=${canceledUserVerificationsearch}`
     }
 
 
@@ -1435,7 +1435,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const UnverifiedUserFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/without-verification/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/without-verification/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1460,7 +1460,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(unverifiedUserSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/without-verification/?search=${unverifiedUserSearch}`
+      url = `https://api.amanilightequity.com/api/users/without-verification/?search=${unverifiedUserSearch}`
     }
 
 
@@ -1481,7 +1481,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const verifiedUserFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/verification/verified/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/verification/verified/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1507,7 +1507,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(verifiedUserSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/verification/verified/?search=${verifiedUserSearch}`
+      url = `https://api.amanilightequity.com/api/users/verification/verified/?search=${verifiedUserSearch}`
     }
 
 
@@ -1528,7 +1528,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const KYCFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user/kyc-verification/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user/kyc-verification/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1556,7 +1556,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(KYCSeacrh.length !== 0){
-      url = `http://127.0.0.1:8000/api/user/kyc-verification/?search=${KYCSeacrh}`
+      url = `https://api.amanilightequity.com/api/user/kyc-verification/?search=${KYCSeacrh}`
     }
 
 
@@ -1577,7 +1577,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const NotUploadKYCFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/without-KYC-verification/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/without-KYC-verification/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1605,7 +1605,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(notUploadKYCSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/without-KYC-verification/?search=${notUploadKYCSearch}`
+      url = `https://api.amanilightequity.com/api/users/without-KYC-verification/?search=${notUploadKYCSearch}`
     }
 
 
@@ -1626,7 +1626,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const VerifiedKYCFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/kyc-verification/verified/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/kyc-verification/verified/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1655,7 +1655,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(verifiedKYCSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/kyc-verification/verified/?search=${verifiedKYCSearch}`
+      url = `https://api.amanilightequity.com/api/users/kyc-verification/verified/?search=${verifiedKYCSearch}`
     }
 
 
@@ -1676,7 +1676,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const CanceledKYCFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/kyc-verification/canceled/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/kyc-verification/canceled/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1705,7 +1705,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(canceledKYCSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/kyc-verification/canceled/?search=${canceledKYCSearch}`
+      url = `https://api.amanilightequity.com/api/users/kyc-verification/canceled/?search=${canceledKYCSearch}`
     }
 
 
@@ -1726,7 +1726,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const PendingKYCFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/kyc-verification/pending/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/kyc-verification/pending/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1754,7 +1754,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(pendingKYCSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/users/kyc-verification/pending/?search=${pendingKYCSearch}`
+      url = `https://api.amanilightequity.com/api/users/kyc-verification/pending/?search=${pendingKYCSearch}`
     }
 
 
@@ -1776,7 +1776,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const PaymentOptionsFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/payment-method/', {
+    let response = await fetch('https://api.amanilightequity.com/api/payment-method/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1805,7 +1805,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(paymentOptionSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/payment-method/?search=${paymentOptionSearch}`
+      url = `https://api.amanilightequity.com/api/payment-method/?search=${paymentOptionSearch}`
     }
 
 
@@ -1828,7 +1828,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const FundsAccountFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/account/', {
+    let response = await fetch('https://api.amanilightequity.com/api/account/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1852,7 +1852,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(fundsAccountSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/account/?search=${fundsAccountSearch}`
+      url = `https://api.amanilightequity.com/api/account/?search=${fundsAccountSearch}`
     }
 
 
@@ -1873,7 +1873,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const InvestmentPlanFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/investment-plan/', {
+    let response = await fetch('https://api.amanilightequity.com/api/investment-plan/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1903,7 +1903,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(investmentPlanSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/investment-plan/?search=${investmentPlanSearch}`
+      url = `https://api.amanilightequity.com/api/investment-plan/?search=${investmentPlanSearch}`
     }
 
 
@@ -1925,7 +1925,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const EmailFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/send-mail/', {
+    let response = await fetch('https://api.amanilightequity.com/api/send-mail/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -1952,7 +1952,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(emailSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/send-mail/?search=${emailSearch}`
+      url = `https://api.amanilightequity.com/api/send-mail/?search=${emailSearch}`
     }
 
 
@@ -1975,7 +1975,7 @@ export const AllDataProvider =  ({ children }) =>{
 
   const BonusFunction = async () => {
     try {
-      let response = await fetch('http://127.0.0.1:8000/api/bonus/', {
+      let response = await fetch('https://api.amanilightequity.com/api/bonus/', {
         method: 'GET',
         headers: {
           "Content-Type": "application/json",
@@ -2009,7 +2009,7 @@ export const AllDataProvider =  ({ children }) =>{
     let url;
 
     if(bonusSearch.length !== 0){
-      url = `http://127.0.0.1:8000/api/bonus/?search=${bonusSearch}`
+      url = `https://api.amanilightequity.com/api/bonus/?search=${bonusSearch}`
     }
 
 
@@ -2033,7 +2033,7 @@ export const AllDataProvider =  ({ children }) =>{
 
   const CommissionFunction = async () => {
     try {
-      let response = await fetch('http://127.0.0.1:8000/api/commission/', {
+      let response = await fetch('https://api.amanilightequity.com/api/commission/', {
         method: 'GET',
         headers: {
           "Content-Type": "application/json",
@@ -2058,7 +2058,7 @@ export const AllDataProvider =  ({ children }) =>{
   };
 
   const BlackListFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/Blacklist-ip/', {
+    let response = await fetch('https://api.amanilightequity.com/api/Blacklist-ip/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -2082,7 +2082,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const NewsLetterFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/news-letter/', {
+    let response = await fetch('https://api.amanilightequity.com/api/news-letter/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -2107,7 +2107,7 @@ export const AllDataProvider =  ({ children }) =>{
 
 
   const UserCommissionFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-commission/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-commission/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
@@ -2133,7 +2133,7 @@ export const AllDataProvider =  ({ children }) =>{
   }
 
   const UserReferralFunction = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/user-referral/', {
+    let response = await fetch('https://api.amanilightequity.com/api/user-referral/', {
       method: 'GET',
       headers: {
         "Content-Type": "application/json",

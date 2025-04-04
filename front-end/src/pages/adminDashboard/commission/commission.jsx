@@ -98,7 +98,7 @@ export const Commission = () =>{
   const UpdateCommission = async(e) =>{
     e.preventDefault()
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/commission/1/', {
+      const response = await fetch('https://api.amanilightequity.com/api/commission/1/', {
         method: 'PATCH',
         body: JSON.stringify({
           name: name,

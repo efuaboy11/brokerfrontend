@@ -71,7 +71,7 @@ export const AddPaymentMethod = () =>{
     formData.append('network', network)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/payment-method/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/payment-method/`, {
         method: 'POST',
         body: formData,
         headers:{

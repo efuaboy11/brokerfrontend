@@ -75,7 +75,7 @@ export const ClientKYC = () =>{
   }
   const IndvividualPaymentMethod = async() =>{
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/payment-method/${paymentOption}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/payment-method/${paymentOption}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

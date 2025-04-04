@@ -91,7 +91,7 @@ export const AllInterest = () =>{
     setDisablebutton(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/investment-intrest/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/investment-intrest/`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,

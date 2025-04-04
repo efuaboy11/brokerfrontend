@@ -69,7 +69,7 @@ export const UserLoginDetails = () =>{
 
 
   const UserDetails = async() =>{
-    let response = await fetch('http://127.0.0.1:8000/api/users/details/', {
+    let response = await fetch('https://api.amanilightequity.com/api/users/details/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -108,7 +108,7 @@ export const UserLoginDetails = () =>{
 
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/users/${details.id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/users/${details.id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{

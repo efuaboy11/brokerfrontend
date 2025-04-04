@@ -128,7 +128,7 @@ export const NewsLetter = () =>{
   const Add = async(e) =>{
     e.preventDefault()
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/news-letter/', {
+      const response = await fetch('https://api.amanilightequity.com/api/news-letter/', {
         method: 'POST',
         body: JSON.stringify({
           name: name,
@@ -175,7 +175,7 @@ export const NewsLetter = () =>{
     setDeletebtnLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/news-letter/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/news-letter/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`

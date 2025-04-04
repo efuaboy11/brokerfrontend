@@ -102,7 +102,7 @@ export const PendingDeposit = () =>{
 
   const IndividualDeposit = async() =>{
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/deposits/${selectedDataId}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/deposits/${selectedDataId}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +128,7 @@ export const PendingDeposit = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -178,7 +178,7 @@ export const PendingDeposit = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/deposits/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/deposits/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -246,7 +246,7 @@ export const PendingDeposit = () =>{
     setDisablebutton(true)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/deposits/${selectedDataId}/update-status/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/deposits/${selectedDataId}/update-status/`, {
         method: 'PATCH',
         body: JSON.stringify({
           status: status,

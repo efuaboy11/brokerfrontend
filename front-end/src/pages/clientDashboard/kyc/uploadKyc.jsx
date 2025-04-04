@@ -122,7 +122,7 @@ export const ClientUploadKYC = () =>{
     formData.append('status', status)
 
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/user/kyc-verification/', {
+      const response = await fetch('https://api.amanilightequity.com/api/user/kyc-verification/', {
         method: 'POST',
         body: formData,
         headers:{

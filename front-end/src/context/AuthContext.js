@@ -224,7 +224,7 @@ export const AuthProvider = ({children}) =>{
     const userDetails = async (profileId) => {
         try {
           const response = await fetch(
-            `http://127.0.0.1:8000/api/user-profile/${profileId ? profileId : user?.profile_id}/`,
+            `https://api.amanilightequity.com/api/user-profile/${profileId ? profileId : user?.profile_id}/`,
             {
               method: "GET",
               headers: {
@@ -262,7 +262,7 @@ export const AuthProvider = ({children}) =>{
       e.preventDefault()
       setLoader(true)
       try{
-          let response = await fetch('http://127.0.0.1:8000/api/request-otp/', {
+          let response = await fetch('https://api.amanilightequity.com/api/request-otp/', {
               method: 'POST',
               headers: {
                   "Content-Type": "application/json"
@@ -332,7 +332,7 @@ export const AuthProvider = ({children}) =>{
         setDisablebutton(true)
         setShowAnimation(true)
         try{
-            let response = await fetch('http://127.0.0.1:8000/api/login/', {
+            let response = await fetch('https://api.amanilightequity.com/api/login/', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
@@ -402,7 +402,7 @@ export const AuthProvider = ({children}) =>{
           }
         }
         try{
-            let response = await fetch('http://127.0.0.1:8000/api/forget-password/', {
+            let response = await fetch('https://api.amanilightequity.com/api/forget-password/', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
@@ -453,7 +453,7 @@ export const AuthProvider = ({children}) =>{
     }
 
     const updateToken = async () =>{
-        let response = await fetch('http://127.0.0.1:8000/api/token/refresh/', {
+        let response = await fetch('https://api.amanilightequity.com/api/token/refresh/', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

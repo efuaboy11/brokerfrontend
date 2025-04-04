@@ -119,7 +119,7 @@ export const CyptoWallet = () =>{
   const IndividualCryptoWallet = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/wallet-address/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -159,7 +159,7 @@ export const CyptoWallet = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/wallet-address/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -201,7 +201,7 @@ export const CyptoWallet = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

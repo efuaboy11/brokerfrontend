@@ -140,7 +140,7 @@ export const DisableUser = () =>{
     setDisablebutton(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/disable-account/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/disable-account/`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,
@@ -189,7 +189,7 @@ export const DisableUser = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/disable-account/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/disable-account/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -231,7 +231,7 @@ export const DisableUser = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

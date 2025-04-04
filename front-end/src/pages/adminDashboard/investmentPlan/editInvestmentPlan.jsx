@@ -82,7 +82,7 @@ export const EditInvestmentPlan = () =>{
     formData.append('time_rate', timeRate)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/investment-plan/${details.id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${details.id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -129,7 +129,7 @@ export const EditInvestmentPlan = () =>{
     setDeletebtnLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/investment-plan/${details.id}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/investment-plan/${details.id}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`

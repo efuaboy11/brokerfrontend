@@ -111,7 +111,7 @@ export const BankCard = () =>{
   const IndividualBankCard = async(id) =>{
     setSelectedDataId(id)
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/bank-card/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -142,7 +142,7 @@ export const BankCard = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/bank-card/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/bank-card/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -184,7 +184,7 @@ export const BankCard = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

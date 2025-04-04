@@ -114,7 +114,7 @@ export const BlackListIp = () =>{
   const AddIP = async(e) =>{
     e.preventDefault()
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/Blacklist-ip/', {
+      const response = await fetch('https://api.amanilightequity.com/api/Blacklist-ip/', {
         method: 'POST',
         body: JSON.stringify({
           ip_address: IpAddress,
@@ -161,7 +161,7 @@ export const BlackListIp = () =>{
     setDeletebtnLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/Blacklist-ip/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/Blacklist-ip/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`

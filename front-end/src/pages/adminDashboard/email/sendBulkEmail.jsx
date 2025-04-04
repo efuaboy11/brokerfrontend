@@ -145,7 +145,7 @@ export const SendBulkEmail = () =>{
 
   const getAllUsers = async () => {
     try {
-      let response = await fetch("http://127.0.0.1:8000/api/list-emails/all-users/", {
+      let response = await fetch("https://api.amanilightequity.com/api/list-emails/all-users/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -167,7 +167,7 @@ export const SendBulkEmail = () =>{
 
   const getVerifiedUsers = async () => {
     try {
-      let response = await fetch("http://127.0.0.1:8000/api/list-emails/verified-user/", {
+      let response = await fetch("https://api.amanilightequity.com/api/list-emails/verified-user/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -192,7 +192,7 @@ export const SendBulkEmail = () =>{
     setLoader(true)
 
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/send-mail/', {
+      const response = await fetch('https://api.amanilightequity.com/api/send-mail/', {
         method: 'POST',
         headers:{
           Authorization: `Bearer ${authTokens.access}`,

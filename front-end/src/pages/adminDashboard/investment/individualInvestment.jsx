@@ -277,7 +277,7 @@ export const IndividualInvestment = () =>{
     console.log('yes')
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/user-investment/${details.id}/update-status/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/user-investment/${details.id}/update-status/`, {
         method: 'PATCH',
         body: JSON.stringify({
           approval_status: statusValue,
@@ -324,7 +324,7 @@ export const IndividualInvestment = () =>{
     setDisablebutton(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/user-investment/${details.id}/update-type/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/user-investment/${details.id}/update-type/`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,
@@ -374,7 +374,7 @@ export const IndividualInvestment = () =>{
     setDisablebutton(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/investment-intrest/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/investment-intrest/`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,
@@ -424,7 +424,7 @@ export const IndividualInvestment = () =>{
     setDisablebutton(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/user-investment/add-money/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/user-investment/add-money/`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,
@@ -473,7 +473,7 @@ export const IndividualInvestment = () =>{
     setDeletebtnLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/user-investment/${details.id}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/user-investment/${details.id}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -518,7 +518,7 @@ export const IndividualInvestment = () =>{
     setCashoutbtnLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/cashout/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/cashout/`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${authTokens.access}`,
@@ -564,7 +564,7 @@ export const IndividualInvestment = () =>{
 
 
   const UpdateDetails = async() =>{
-    let response = await fetch(`http://127.0.0.1:8000/api/user-investment/${details.id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-investment/${details.id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -583,7 +583,7 @@ export const IndividualInvestment = () =>{
 
   const InvestmentIntrest = async() =>{
 
-    let response = await fetch(`http://127.0.0.1:8000/api/investment-intrest/filter/?user=${details?.user}&investment_id=${details?.investment_id}`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/investment-intrest/filter/?user=${details?.user}&investment_id=${details?.investment_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -169,7 +169,7 @@ export const UserVerification = () =>{
     console.log('yes')
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/users/verification/${selectedDataId}/update-status/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/users/verification/${selectedDataId}/update-status/`, {
         method: 'PATCH',
         body: JSON.stringify({
           status: statusValue,
@@ -218,7 +218,7 @@ export const UserVerification = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/user/verification/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/user/verification/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -292,7 +292,7 @@ export const UserVerification = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

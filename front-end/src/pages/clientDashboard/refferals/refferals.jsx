@@ -101,7 +101,7 @@ export const ClientUserReferral = () =>{
   const addReferral = async(e) =>{
     e.preventDefault()
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/referral/', {
+      const response = await fetch('https://api.amanilightequity.com/api/referral/', {
         method: 'POST',
         body: JSON.stringify({
           referral_code: link,

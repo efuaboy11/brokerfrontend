@@ -100,7 +100,7 @@ export const PendingWithdraw = () =>{
 
   const IndividualWithdraw = async() =>{
     setDisablebutton(true)
-    let response = await fetch(`http://127.0.0.1:8000/api/withdraw/${selectedDataId}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/withdraw/${selectedDataId}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -155,7 +155,7 @@ export const PendingWithdraw = () =>{
     setLoader(true)
 
     try{
-      let response = await fetch(`http://127.0.0.1:8000/api/withdraw/${selectedDataId}/`, {
+      let response = await fetch(`https://api.amanilightequity.com/api/withdraw/${selectedDataId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authTokens.access}`
@@ -197,7 +197,7 @@ export const PendingWithdraw = () =>{
     setSelectedDataId(id)
     setDisablebutton(true)
 
-    let response = await fetch(`http://127.0.0.1:8000/api/user-profile/admin/${id}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/user-profile/admin/${id}/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -247,7 +247,7 @@ export const PendingWithdraw = () =>{
     setDisablebutton(true)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/withdraw/${selectedDataId}/update-status/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/withdraw/${selectedDataId}/update-status/`, {
         method: 'PATCH',
         body: JSON.stringify({
           status: status,

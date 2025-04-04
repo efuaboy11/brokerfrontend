@@ -72,7 +72,7 @@ export const SendEmail = () =>{
     formData.append('body', emailMessage)
 
     try{
-      const response = await fetch('http://127.0.0.1:8000/api/send-mail/', {
+      const response = await fetch('https://api.amanilightequity.com/api/send-mail/', {
         method: 'POST',
         body: formData,
         headers:{

@@ -222,7 +222,7 @@ export const ClientUserProfile = () =>{
     formData.append('last_name', lastNameValue)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/user/verification/${userProfile.user_verification[0].id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/user/verification/${userProfile.user_verification[0].id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -271,7 +271,7 @@ export const ClientUserProfile = () =>{
     formData.append('user_name', userNameValue)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/users/${userProfile.user}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/users/${userProfile.user}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -320,7 +320,7 @@ export const ClientUserProfile = () =>{
     formData.append('email', emailValue)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/users/${userProfile.user}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/users/${userProfile.user}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -368,7 +368,7 @@ export const ClientUserProfile = () =>{
     formData.append('phone_number', phoneNumberValue)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/user/verification/${userProfile.user_verification[0].id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/user/verification/${userProfile.user_verification[0].id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -416,7 +416,7 @@ export const ClientUserProfile = () =>{
     formData.append('gender', sexValue)
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/user/verification/${userProfile.user_verification[0].id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/user/verification/${userProfile.user_verification[0].id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{
@@ -468,7 +468,7 @@ export const ClientUserProfile = () =>{
     formData.append('zip_code', zipCodeValue)    
 
     try{
-      const response = await fetch(`http://127.0.0.1:8000/api/user/verification/${userProfile.user_verification[0].id}/`, {
+      const response = await fetch(`https://api.amanilightequity.com/api/user/verification/${userProfile.user_verification[0].id}/`, {
         method: 'PATCH',
         body: formData,
         headers:{

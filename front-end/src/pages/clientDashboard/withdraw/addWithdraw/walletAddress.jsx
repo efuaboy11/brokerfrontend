@@ -82,7 +82,7 @@ export const ClientWalletWithdraw = () =>{
 
 
   const WalletAddressFunction = async() =>{
-    let response = await fetch(`http://127.0.0.1:8000/api/wallet-address/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/wallet-address/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

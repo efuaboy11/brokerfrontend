@@ -114,7 +114,7 @@ export const EmailMessage = () =>{
     } else {
       setLoader(true)
     }
-    let response = await fetch(`http://127.0.0.1:8000/api/send-mail/${selectedEmailID}/`, {
+    let response = await fetch(`https://api.amanilightequity.com/api/send-mail/${selectedEmailID}/`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${authTokens.access}`
