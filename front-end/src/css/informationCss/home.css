@@ -1,0 +1,161 @@
+
+
+
+.home-phone-chart-video{
+    width: 134%;
+    max-width: 500px;
+    position: static;
+    background: none;
+}
+
+.home-crypto-banner-header{
+    font-size: 50px;
+}
+
+.home-crypto-banner{
+    position: relative;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    width: 100%;
+    background: linear-gradient(95.96deg, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 60%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-crypto-banner::before{
+
+    content: "";
+    background: url(../../img/Crypto-baner.jpg)no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    
+}
+.home-trade-boxes-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home-trade-boxes{
+    width: 170px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.home-trade-boxes:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.home-investment-plan-boxes{
+    border: 1px solid #17153b;
+    border-radius: 5px;
+}
+.home-investment-header-container{
+    max-width: 600px;
+}
+.home-investment-plan-sub-headers{
+    font-family: serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.home-investment-plan-dark-text{
+    color: #17153b;
+}
+
+.home-faq-plus{
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 765px){
+    .home-crypto-banner{
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .home-live-chart-text{
+        text-align: center;
+
+    }
+    .home-live-chart-icon{
+        display: flex;
+        justify-content: center;
+    }
+  
+  
+}
+
+@media screen and (max-width: 700px){
+    .home-phone-chart-video{
+        width: 100%;
+    }
+
+    .home-crypto-banner-header{
+        font-size: 35px;
+    }
+  
+  
+}
+
+@media screen and (max-width: 575px){
+    .home-features-img{
+        display: flex;
+        justify-content: center;
+        
+    
+    }
+
+    .home-features-text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    
+    }
+
+    .responsive-centralized-text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-meta5-text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+  
+  
+}
+
+@media screen and (max-width: 500px){
+
+    .home-crypto-banner-header{
+        font-size: 30px;
+    }
+  
+  
+}
+
+@media screen and (max-width: 380px){
+    .home-trade-boxes{
+        width: 100%;
+    }
+  
+  
+}
+

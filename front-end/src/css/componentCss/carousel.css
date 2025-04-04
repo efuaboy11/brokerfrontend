@@ -1,0 +1,84 @@
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  display: grid;
+  transition: transform 0.5s ease;
+  grid-auto-flow: column;
+}
+
+/* Carousel Item */
+.carousel-item {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+/* Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+  z-index: 10;
+}
+.carousel-container:hover .carousel-arrow {
+  display: block;
+}
+.carousel-arrow.left {
+  left: 10px;
+}
+.carousel-arrow.right {
+  right: 10px;
+}
+
+/* Dots Navigation */
+.carousel-dots {
+  text-align: center;
+  margin: 1rem 0;
+}
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.carousel-dot.active {
+  background-color: #333;
+}
+
+/* Responsive Styles */
+@media (min-width: 1024px) {
+  .carousel-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .carousel-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

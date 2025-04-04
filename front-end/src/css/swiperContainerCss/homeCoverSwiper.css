@@ -1,0 +1,147 @@
+/* General home-cover-Carousel Styling */
+.home-cover-carousel-container {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-cover-carousel-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.home-cover-carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.home-cover-carousel-content-width{
+  width: 600px;
+}
+.home-cover-carousel-text-content-width{
+  width: 400px;
+  font-size: 20px;
+}
+
+
+
+.home-cover-carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.home-cover-carousel-slide.inactive {
+  z-index: 0;
+}
+
+/* Overlay Styling */
+.home-cover-carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+/* Content Styling */
+.home-cover-carousel-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  left: 8%;
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.home-cover-carousel-header{
+  font-size: 50px;
+}
+.home-cover-carousel-sub-text{
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+
+
+/* .home-cover-carousel-action-btn {
+  padding: 0.8rem 2rem;
+  background-color: #ff5733;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-cover-carousel-action-btn:hover {
+  background-color: #c70039;
+} */
+
+/* Navigation Buttons */
+/* Navigation Buttons */
+.home-cover-carousel-buttons {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 3;
+}
+
+.home-cover-carousel-button {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-cover-carousel-button.active {
+  width: 30px; /* Wider when active */
+  height: 10px; /* Retain height for active */
+  background-color: #4A249D;
+  border-radius: 7px; /* Slightly rounded for active */
+  transform: scale(1.2);
+}
+
+.home-cover-carousel-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+@media screen and (max-width: 500px){
+ 
+  .home-cover-carousel-content-width{
+    width: 100%;
+  }
+
+  .home-cover-carousel-text-content-width{
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .home-cover-carousel-header{
+    font-size: 30px;
+  }
+}

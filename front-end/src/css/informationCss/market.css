@@ -1,0 +1,29 @@
+.market-sidebar-link{
+    display: block;
+    color: #373f41;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-left: 7px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-transition: .3s;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.market-sidebar-link:hover{
+    border-left: 7px solid #4A249D;
+    border-bottom: 1px solid #4A249D;
+    color: #4A249D;
+}
+
+
+.market-sidebar-active-link{
+    border-left: 7px solid #4A249D;
+    border-bottom: 1px solid #4A249D;
+    color: #4A249D;
+}
+
+.market-sidebar{
+    min-width: 25%;
+}

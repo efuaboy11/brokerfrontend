@@ -1,0 +1,204 @@
+/* Styling for the Link component */
+.site-btn {
+    --color: #4A249D; /* Default purple color */
+    display: inline-block;
+    padding: 0.8em 1.0em;
+    background-color: var(--color);
+    border-radius: 0.3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.8s ease, color 0.8s ease;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid var(--color);
+    color: #fff; /* Default text color */
+    text-decoration: none; /* Remove underline for links */
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* Circle animation */
+.site-btn::before,
+.site-btn::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* Initial small size for circles */
+    height: 50px;
+    background:none; /* Circle color */
+    border-radius: 50%;
+    z-index: -1;
+    transition: width 0.8s ease, height 0.8s ease, transform 0.8s ease;
+}
+
+/* Position circles at opposite corners */
+.site-btn::before {
+    top: -10em;
+    left: -1em;
+    transform: translate(0, 0);
+}
+
+.site-btn::after {
+    bottom: -1em;
+    right: -10em;
+    transform: translate(0, 0);
+}
+
+/* Hover state */
+.site-btn:hover {
+    background: none;
+    color: var(--color); /* Text turns purple */
+}
+
+.site-btn:hover::before,
+.site-btn:hover::after {
+    width: 500px; /* Expand size for circles */
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Styling for the Link component */
+.site-inverse-btn {
+    --color: #4A249D; /* Default purple color */
+    display: inline-block;
+    padding: 0.8em 1.0em;
+    background-color: transparent; /* No background initially */
+    border-radius: 0.3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.8s ease, color 0.8s ease;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid var(--color);
+    color: var(--color); /* Purple text initially */
+    text-decoration: none; /* Remove underline for links */
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* Circle animation */
+.site-inverse-btn::before,
+.site-inverse-btn::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* Initial small size for circles */
+    height: 50px;
+    background-color: var(--color); /* Purple circles */
+    border-radius: 50%;
+    z-index: -1;
+    transition: width 0.8s ease, height 0.8s ease, transform 0.8s ease;
+}
+
+/* Position circles at opposite corners */
+.site-inverse-btn::before {
+    top: -10em;
+    left: -1em;
+    transform: translate(0, 0);
+}
+
+.site-inverse-btn::after {
+    bottom: -1em;
+    right: -10em;
+    transform: translate(0, 0);
+}
+
+/* Hover state */
+.site-inverse-btn:hover {
+    background-color: var(--color); /* Match hover background color */
+    color: #fff; /* Text turns white */
+}
+
+.site-inverse-btn:hover::before,
+.site-inverse-btn:hover::after {
+    width: 500px; /* Expand size for circles */
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+
+.site-btn-2{
+    --color: #4A249D; /* Default purple color */
+    display: inline-block;
+    padding: 0.8em 1.0em;
+    border-radius: 0.3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    color: #fff; /* Default text color */
+    text-decoration: none; /* Remove underline for links */
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.site-btn-2:hover {
+    color: #aaa;
+}
+.site-primary-bg{
+    background-color: #4A249D;
+    color: #fff;
+}
+
+.site-primary-text{
+    color: #4A249D;
+}
+
+.site-section-container{
+    margin: 90px 0;
+}
+.site-header{
+    font-size: 30px;
+
+}
+
+.site-boxes{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: ease all 1.5s;
+    border-radius: 5px;
+}
+.site-boxes:hover{
+    background-color: #4A249D;
+    color: #fff;
+
+}
+
+.site-boxes-header{
+    color: inherit;
+}
+
+.site-boxes:hover .site-boxes-header{
+    color: #fff;
+}
+
+.site-boxes-text{
+    color: #737b7d;
+}
+
+.site-boxes:hover .site-boxes-text{
+    color: #F6F5F5;
+}
+
+.site-good-mark{
+    display: flex;
+    align-items: center;
+    min-width: 20px;
+    max-height: 20px;
+    justify-content: center;
+    
+}
+
+.site-number{
+    display: flex;
+    align-items: center;
+    min-width: 25px;
+    height: 25px;
+    justify-content: center;
+    
+}
+

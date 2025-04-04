@@ -1,0 +1,31 @@
+.affiliate-title-block-header{
+    display: block;
+    max-width: 392px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 23px 17px;
+    font-size: 30px;
+}
+
+.affiliate-icon-text{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.affiliate-payment-method-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.affiliate-payment-method-sub-container{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.margin-requrement-table tr td {
+    border: 1px solid #e9e9e9;
+    vertical-align: middle;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+}

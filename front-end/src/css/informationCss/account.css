@@ -1,0 +1,36 @@
+.account-table tbody tr:nth-child(odd) {
+    background-color: #fff; /* Every even row */
+}
+
+.account-table tbody tr{
+    border: 1px solid #aaa;
+}
+
+.account-table thead tr{
+    border: 1px solid #aaa;
+}
+
+.account-table-image{
+    width: 50px;
+}
+@media screen and (max-width: 500px){
+    .account-table-text{
+        font-size: 13px;
+    }
+
+    .account-table-image{
+       width: 30px;
+    }
+
+
+    .account-table tbody tr td{
+        padding: 20px 10px;
+    }
+    
+    .account-table thead tr th{
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+  
+  
+}
