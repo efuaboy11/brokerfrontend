@@ -168,7 +168,7 @@ export const ClientInvestmentPlan = () =>{
                                       <div className="d-flex justify-content-center">
                                         <div className=' text-center'>
                                           <p className="md-text">{data.duration}</p>
-                                          <p className="light-text">{formatName(checkTimeDuration(data.time_rate))}(s)</p>
+                                          <p className="light-text">{formatName(data.duration_span)}</p>
                                         </div>
                                       </div>
     

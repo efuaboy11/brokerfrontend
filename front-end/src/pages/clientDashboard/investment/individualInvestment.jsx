@@ -569,7 +569,7 @@ export const ClientIndividualInvestment = () =>{
                     <div className="col-xl-4 col-md-6 border-bottom1 py-1">
                       <div className="d-flex justify-content-between">
                         <p className='light-text'>Term Duration:</p>
-                        <p>{details.plan_details.duration} {checkTimeDuration(details.plan_details.time_rate)}</p>
+                        <p>{details.plan_details.duration} {details.plan_details.duration_span}</p>
                       </div>
                     </div>
 

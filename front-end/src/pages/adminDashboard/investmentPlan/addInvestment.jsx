@@ -16,6 +16,7 @@ export const AddInvestmentPlan = () =>{
   const [maxAmount, setMaxAmount] = useState('')
   const [percentage, setPercentage] = useState('')
   const [duration, setDuration] = useState('')
+  const [durationSpan, setDurationSpan] = useState('')
   const [timeRate, setTimeRate] = useState('')
   const [loader, setLoader] = useState(false)
 
@@ -74,6 +75,7 @@ export const AddInvestmentPlan = () =>{
     formData.append('max_amount', maxAmount)
     formData.append('percentage_return', percentage)
     formData.append('duration', duration)
+    formData.append('duration_span', durationSpan)
     formData.append('time_rate', timeRate)
 
     try{
@@ -97,6 +99,7 @@ export const AddInvestmentPlan = () =>{
         setMaxAmount('')
         setPercentage('')
         setTimeRate('')
+        setDurationSpan('')
 
       }else{
         const errorData = await response.json()
@@ -207,6 +210,19 @@ export const AddInvestmentPlan = () =>{
                         <label htmlFor="" className="p-2 ">Duration</label>
                         <input type="text" className={`dashboard-input ${errors.duration ? 'error-input' : ''}`} {...register('duration', {required: true})}  value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="e.g 12" />
                         {errors.duration && <span style={{color: 'red'}}>This Feild is required</span>} 
+                      </div>
+
+                      <div className="col-sm-6">
+                        <label htmlFor="" className="p-2 ">Duration Span</label>
+                        <select className={`${errors.durationSpan ? 'error-input' : ''} dashboard-input cursor-pointer`} {...register('durationSpan', {required: true})} type="text"   value={durationSpan} onChange={(e) => setDurationSpan(e.target.value)}>
+                          <option></option>
+                          <option value='hour(s)'>Hour(s)</option>
+                          <option value='day(s)'>Day(s)</option>
+                          <option value='week(s)'>Week(s)</option>
+                          <option value='month(s)'>Month(s)</option>
+                          <option value='year(s)'>Year(s)</option>
+                        </select>
+                        {errors.durationSpan && <span style={{color: 'red'}}>This Feild is required</span>} 
                       </div>
 
                       <div className="col-sm-6">

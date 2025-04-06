@@ -147,7 +147,7 @@ export const Login = () =>{
 
                                         <div className="col-12">
                                           <div>
-                                            <ReCAPTCHA sitekey="6LdcY7kqAAAAAD-uqrX0lrpUIabQjuWpWFosd2y_" onChange={onCaptchaChange}/>
+                                            <ReCAPTCHA sitekey="6LdtdQUrAAAAAFVowoPJ2WME7eepwmJ91VApnOE-" onChange={onCaptchaChange}/>
                                           </div>                      
                                         </div>
                                       </div>

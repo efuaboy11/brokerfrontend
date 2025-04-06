@@ -183,7 +183,7 @@ export const InvestmentPlan = () =>{
                           <td>{formatCurrency(data.min_amount)} USD</td>
                           <td>{formatCurrency(data.max_amount)} USD</td>
                           <td>{roundUp(data.percentage_return)}%</td>            
-                          <td>{data.duration} {checkTimeDuration(data.time_rate)}</td>
+                          <td>{data.duration} {data.duration_span}</td>
                           <td>{formatName(data.time_rate)}</td>
                           <td>
                             <button disabled={disablebutton} className='Button' onClick={() => IndvividualPlan(data.id)}>
