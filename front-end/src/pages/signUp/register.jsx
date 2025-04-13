@@ -239,12 +239,25 @@ export const Register = () =>{
                                       <div className="col-12">
                                         <label className="form-label">Password</label>
                                         <div className="password-container">
-                                          <input type={`${showPassword ? "text": 'password'}`}  className={`styled-input password-input ${errors.password ? 'error-input' : ''}`} {...register('password', {required: true})}  value={password} onChange={(e) => setPassword(e.target.value)}  placeholder="Enter your password" />
+                                          <input 
+                                            type={`${showPassword ? "text" : "password"}`}  
+                                            className={`styled-input password-input ${errors.password ? 'error-input' : ''}`} 
+                                            {...register('password', { 
+                                              required: 'Password is required', 
+                                              minLength: {
+                                                value: 8,
+                                                message: 'Password should be at least 8 characters'
+                                              }
+                                            })}  
+                                            value={password} 
+                                            onChange={(e) => setPassword(e.target.value)}  
+                                            placeholder="Enter your password" 
+                                          />
                                           <span className="password-icon">
                                             <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} onClick={toogleShowPassword}/>
                                           </span>
                                         </div>
-                                        {errors.password && <span style={{color: 'red'}}>This Feild is required</span>}
+                                        {errors.password && <span style={{color: 'red'}}>{errors.password.message}</span>}
                                       </div>
 
                                       <div className="col-12">

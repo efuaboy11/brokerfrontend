@@ -160,7 +160,7 @@ export const Supports = () =>{
                           </div>
 
                           <div className="col-lg-9 col-md-9 col-8">
-                            <input  type="text" className={`cursor-not-allowed dashboard-input ${errors.email ? 'error-input' : ''}`} {...register('email', {required: true})}      value="<iseghohimhene@gmail.com>"/>
+                            <input  type="text" className={`cursor-not-allowed dashboard-input ${errors.email ? 'error-input' : ''}`} {...register('email', {required: true})}      value="<support@amanilightEquity.com>"/>
                             {errors.email && <span style={{color: 'red'}}>This Feild is required</span>} 
                           </div>
 

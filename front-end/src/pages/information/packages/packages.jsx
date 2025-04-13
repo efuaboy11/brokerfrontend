@@ -125,7 +125,7 @@ export const Packages = () =>{
                             <div className='p-4'>
                               <div className="text-center">
                                 <h1 className="site-primary-text home-investment-plan-sub-headers">{formatName(data.plan_name)}</h1>
-                                <h3 className="home-investment-plan-dark-text">{formatName(data.time_rate)} {roundUp(data.percentage_return)}% for {data.duration} {formatName(checkTimeDuration(data.time_rate))}(s) </h3>
+                                <h3 className="home-investment-plan-dark-text">{formatName(data.time_rate)} {roundUp(data.percentage_return)}% for {data.duration} {formatName(data.duration_span)}</h3>
                               </div>
 
                               
