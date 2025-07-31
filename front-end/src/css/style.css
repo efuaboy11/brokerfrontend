@@ -327,7 +327,7 @@ ul,  li{
   height: 100%; 
   overflow: auto; 
 }
-
+.italic-text
 .modal-content{
   position: absolute;
   top: 40%;
